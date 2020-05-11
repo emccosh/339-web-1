@@ -1,0 +1,241 @@
+/* Starter CSS */
+
+/* home and logo */
+* {
+    box-sizing: border-box; /* because it’s 2019, jen simmons */
+    padding: 0;
+    margin: 0;
+}
+html {
+    color: #696969;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+
+body { 
+    margin: auto;
+    width: 70%;
+    }
+
+    
+img {
+    display: block;
+    width: 100%;
+    }
+
+.logomenu {
+    max-width: 600px;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+}
+
+    
+logo img{
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    margin: 250px 0 50px 0;
+    width: 100%;
+}
+
+.small-logo {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    clear: both;
+    position: relative;
+    width: 30%;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+
+
+/* menu */
+
+ul {
+    margin: 0 auto;
+    z-index: 0;
+    font-weight: 200;
+    text-decoration: none; 
+    font-family: "Avenir Next", sans-serif;
+    text-align: center;
+}
+
+li {
+    font-size: .8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding: .5em;
+    text-align: center;
+    display: inline;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #6EC3A8;
+}
+
+
+
+
+/* columns and text */
+.columns, .columns2 {
+    display: grid;
+    grid-gap: 3em;
+    margin: 0 auto;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
+    margin: 10%;
+    font-family: "Avenir Next", sans-serif;
+    font-size: .8em;
+    
+}
+
+
+/* flexbox */
+.columns2 {
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.text-three, .text-four, .text-five {
+  display: flex;
+  flex-direction: column;
+  min-wdith: 150px;
+  max-width: 250px;
+  position: relative;
+  padding: 2em;
+  top: 0;
+}
+
+/* end flexbox*/
+
+.text-one h1, .text-two h1, .text-three h1, .text-four h1, .text-five h1, .contact-one h1 {
+   font-family: "Avenir Next", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: .7em;
+    color: #6EC3A8;
+}
+
+
+.text-three h1, .text-four h1, .text-five h1 {
+    font-size: 1.5em;
+}
+
+.text-two {
+    border-top: .5em solid #E4F1F2;
+    padding-top: 5em;
+    text-align: center;
+}
+
+
+p {
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 1.8em;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+/* icons */
+.icon-one {
+    display: grid;
+    justify-items: center;
+    margin: auto;
+    margin-top: 3em;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+}
+
+.amazon-icon, .goodreads-icon {
+    width: 3em;
+}
+
+
+
+
+
+/* responsive */
+
+@media only screen and (min-width: 95em) {
+    .columns {
+        grid-template-columns: 1fr 2fr;
+    }
+    .icon-one {
+        width: 30%
+    }
+}
+
+@media only screen and (max-width: 65em) {
+    .columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .columns2 {
+        padding-top: 3em;
+        grid-template-columns: 1fr;
+    }
+    
+    .text-three, .text-four, .text-five {
+        min-wdith: 350px;
+        max-width: 450px;
+    }
+}
+
+
+
+    
+    
+    
+    /* This is the CSS markup for commenting */
+    
+    /* A one-line comment */
+    
+    /*
+    A comment
+    which stretches
+    over several
+    lines
+    */
+    
+    /* The comment below is used to
+       disable specific styling */
+    
+    /*
+    span {
+      color: blue;
+      font-size: 1.5em;
+    }
+    */
+    /* highlight the item and use Command + slash to comment something out. */
