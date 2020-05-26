@@ -1,0 +1,54 @@
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  transform: rotate(-45deg);
+  width: 60%;
+}
+
+.outer {
+  overflow: hidden;
+}
+
+.item img {
+  transform: rotate(45deg) scale(1.5);
+  opacity: 0.8;
+}
+
+.item img:hover {
+  opacity: 1;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.three {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.four {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.five {
+  grid-column: 3;
+  grid-row: 3;
+}
