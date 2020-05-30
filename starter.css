@@ -133,7 +133,7 @@ a:hover {
 
 /* end flexbox*/
 
-.text-one h1, .text-two h1, .text-three h1, .text-four h1, .text-five h1, .contact-one h1 {
+.text-one h1, .text-two h1, .text-three h1, .text-four h1, .text-five h1, .contact-one h1, .text-gallery h1 {
    font-family: "Avenir Next", sans-serif;
     font-weight: 200;
     text-transform: uppercase;
@@ -145,6 +145,11 @@ a:hover {
 
 .text-three h1, .text-four h1, .text-five h1 {
     font-size: 1.5em;
+}
+
+.text-gallery h1 {
+    margin: 10%;
+    text-align: center;
 }
 
 .text-two {
@@ -184,6 +189,18 @@ p {
 
 
 
+/* font awesome */
+
+.fa {
+    margin-right: 0.8em;
+    margin-top: 0.1em;
+}
+
+.fa:hover {
+    color: #6EC3A8;
+}
+
+
 
 
 /* responsive */
@@ -195,6 +212,7 @@ p {
     .icon-one {
         width: 30%
     }
+    
 }
 
 @media only screen and (max-width: 65em) {
@@ -211,6 +229,8 @@ p {
         min-wdith: 350px;
         max-width: 450px;
     }
+
+
 }
 
 
