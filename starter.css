@@ -18,7 +18,7 @@ html {
 
 body { 
     margin: auto;
-    width: 70%;
+    width: 100%;
     }
 
     
@@ -109,6 +109,8 @@ a:hover {
     margin: 10%;
     font-family: "Avenir Next", sans-serif;
     font-size: .8em;
+    width: 70%;
+    margin: 5em auto;
     
 }
 
@@ -153,7 +155,6 @@ a:hover {
 }
 
 .text-two {
-    border-top: .5em solid #E4F1F2;
     padding-top: 5em;
     text-align: center;
 }
@@ -189,6 +190,39 @@ p {
 
 
 
+
+/* parallax scroll */
+
+.scroll-image {
+    height: 300px;
+  background-image: url(img/woods-bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.review {
+    width: 70%;
+    margin: 6em auto;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    line-height: 1.8em;
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+}
+
+
+
+
 /* font awesome */
 
 .fa {
@@ -212,8 +246,17 @@ p {
     .icon-one {
         width: 30%
     }
-    
 }
+
+
+@media only screen and (min-width: 75em) {
+    
+    .review {
+        font-size: 1em;
+        margin-top: 6em;
+    }
+}
+
 
 @media only screen and (max-width: 65em) {
     .columns {
