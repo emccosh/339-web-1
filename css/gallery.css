@@ -8,6 +8,9 @@ img {
 
 .gallery {
   margin: 0 auto;
+    position: absolute;
+    top: 12rem;
+left: 13rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
