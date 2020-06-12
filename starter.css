@@ -150,7 +150,7 @@ a:hover {
 }
 
 .text-gallery h1 {
-    margin: 10%;
+    margin: 8%;
     text-align: center;
 }
 
@@ -255,6 +255,11 @@ span {
         font-size: 1em;
         margin-top: 6em;
     }
+    
+        .text-gallery h1 {
+    margin: 5%;
+}
+    
 }
 
 
@@ -272,6 +277,8 @@ span {
         min-wdith: 350px;
         max-width: 450px;
     }
+    
+
 
 
 }
